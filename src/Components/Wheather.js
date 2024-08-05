@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Wheather.css'
-import { CiSearch } from "react-icons/ci";
+import { FaSearch } from "react-icons/fa";
 import {MdLocationOn} from 'react-icons/md'
 import { FaWind } from "react-icons/fa";
 import { WiHumidity } from "react-icons/wi";
@@ -48,7 +48,7 @@ const Wheather=()=>{
         <div className='container'>
             <div className='city'>
             <input type='text' placeholder='Enter City' value={city} onChange={handleOnChange}/>
-            <button onClick={()=>fetchdata()} ><CiSearch color='blue' size={27}/></button>
+            <button onClick={()=>fetchdata()} ><FaSearch color='blue' size={27}/></button>
             </div>
 
             {
